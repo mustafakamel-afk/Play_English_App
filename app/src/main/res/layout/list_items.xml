@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/editbox_background_normal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/level_text_view"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/background_blue_1"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="5"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textColor="@android:color/white"
+        android:textSize="32sp" />
+
+
+    <RatingBar
+        android:id="@+id/level_rating_bar"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:progressTint="@color/yellow"
+        android:progressBackgroundTint="#a0bac6"
+        android:secondaryProgressTint="#c4870e"
+        android:numStars="3"
+        android:rating="3"
+        android:isIndicator="true"
+        android:stepSize="0.5" />
+
+</RelativeLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ham.englishapporigin_mk_mk_mk_2000_2019.WordsQuestions">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:indeterminate="false"
+        android:max="75"
+        android:maxHeight="10dp"
+        android:minHeight="15dp"
+        android:progressDrawable="@drawable/progress_bar_style" />
+
+    <TextView
+        android:id="@+id/the_question_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Qualifications"
+        android:textColor="@color/colorPrimary"
+        android:textSize="45sp" />
+
+    <LinearLayout
+        android:id="@+id/question_one_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Q1_selection_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_blue_1"
+            android:gravity="center"
+            android:onClick="Q1_selections"
+            android:padding="16dp"
+            android:text="تتناسب"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/Q1_selection_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_blue_1"
+            android:gravity="center"
+            android:onClick="Q1_selections"
+            android:padding="16dp"
+            android:text="يرتقي"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="40sp" />
+
+
+        <Button
+            android:id="@+id/Q1_selection_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_blue_1"
+            android:gravity="center"
+            android:onClick="Q1_selections"
+            android:padding="16dp"
+            android:text="يحارب"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/question_two_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/Q2_selection_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_blue_1"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:onClick="Q2_selections"
+            android:padding="16dp"
+            android:text="mathematics"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/Q2_selection_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_blue_1"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:onClick="Q2_selections"
+            android:padding="16dp"
+            android:text="garbage"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="35sp" />
+
+
+        <Button
+            android:id="@+id/Q2_selection_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_blue_1"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:onClick="Q2_selections"
+            android:padding="16dp"
+            android:text="opportunities"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/question_three_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/Q3_selection_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:onClick="Q3_selections"
+                app:cardCornerRadius="42dp"
+                app:cardElevation="8dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:src="@drawable/text_to_speech_ic" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/Q3_selection_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:onClick="Q3_selections"
+                app:cardCornerRadius="42dp"
+                app:cardElevation="8dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:src="@drawable/text_to_speech_ic" />
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/Q3_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="8dp"
+            android:onClick="Q3_done"
+            android:src="@drawable/next_blue_ic" />
+    </LinearLayout>
+</LinearLayout>

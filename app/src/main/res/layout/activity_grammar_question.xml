@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ham.englishapporigin_mk_mk_mk_2000_2019.GrammarQuestion">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:indeterminate="false"
+        android:max="75"
+        android:maxHeight="10dp"
+        android:minHeight="15dp"
+        android:progressBackgroundTint="#a0bac6"
+        android:progressDrawable="@drawable/progress_bar_style"
+        android:progressTint="@color/indigo"
+        android:secondaryProgressTint="@color/indigo" />
+
+    <TextView
+        android:id="@+id/the_question_text_view_1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="املأ الفراغ بما يناسبه :"
+        android:textColor="@color/colorPrimary"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/the_question_text_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="polite , impolite \n ; popular , ............."
+        android:textColor="@color/indigo"
+        android:textSize="34sp" />
+
+    <RelativeLayout
+        android:id="@+id/question_one_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/question_one_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/frame_indigo"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:hint="....................."
+            android:inputType="textNoSuggestions"
+            android:padding="20dp"
+            android:text=""
+            android:textColor="@color/indigo"
+            android:textColorHint="#557786"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:id="@+id/Q1_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="4dp"
+            android:alpha="0.4"
+            android:onClick="Q1_done"
+            android:src="@drawable/next_indigo_ic" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/question_two_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/question_two_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/frame_indigo"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:hint="....................."
+            android:inputType="textNoSuggestions"
+            android:padding="20dp"
+            android:text=""
+            android:textColor="@color/indigo"
+            android:textColorHint="#557786"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:id="@+id/Q2_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="4dp"
+            android:alpha="0.4"
+            android:onClick="Q2_done"
+            android:src="@drawable/next_indigo_ic" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/question_three_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/Q3_selection_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_indigo"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:onClick="Q3_selections"
+            android:padding="8dp"
+            android:text="Iam from iraq and my friends musafa"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/Q3_selection_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_indigo"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:onClick="Q3_selections"
+            android:padding="8dp"
+            android:text="Iam from iraq and my friends musafa"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+
+
+        <Button
+            android:id="@+id/Q3_selection_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_indigo"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:onClick="Q3_selections"
+            android:padding="8dp"
+            android:text="Iam from iraq and my friends musafa"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+</LinearLayout>
